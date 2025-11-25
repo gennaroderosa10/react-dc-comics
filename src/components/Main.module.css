@@ -1,0 +1,19 @@
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    color: white;
+
+}
+
+.icon {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.icon img {
+    padding-right: 10px;
+    width: 50px;
+}
