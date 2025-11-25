@@ -1,7 +1,7 @@
 import Logo from "../assets/img/dc-logo.png";
 import style from "./Header.module.css";
 
-export default function Header() {
+export default function AppHeader() {
     return (
         <header className="container d-flex justify-content-space-between ">
             <img className={style.logo} src={Logo} alt="" />
