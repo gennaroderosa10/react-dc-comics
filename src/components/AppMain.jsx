@@ -15,7 +15,7 @@ export default function AppMain() {
                 </div>
             </div>
             <div className="background-blue">
-                <div className="container d-flex">
+                <div className="container d-flex justify-content-center">
                     <nav className="d-flex">
                         <ul className={style.menu}>
                             <li className={style.icon}>

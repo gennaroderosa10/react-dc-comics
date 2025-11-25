@@ -1,0 +1,19 @@
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    color: blue;
+}
+
+.btn {
+    padding: 10px;
+    border: 2px solid blue;
+    color: white;
+    background-color: black;
+}
+
+.footer-nav {
+    display: flex;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
