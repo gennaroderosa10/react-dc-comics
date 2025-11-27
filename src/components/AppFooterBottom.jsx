@@ -4,10 +4,12 @@ import Twitter from "../assets/img/footer-twitter.png";
 import Youtube from "../assets/img/footer-youtube.png";
 import Pinterest from "../assets/img/footer-pinterest.png";
 import Periscope from "../assets/img/footer-periscope.png";
+import AppFooterTop from "./AppFooterTop";
 
 export default function AppFooterBottom() {
     return (
         <footer className="background-black ">
+            <AppFooterTop />
             <div className="container d-flex justify-content-space-between align-items-center ">
                 <button className={`${style.btn} ciao`}>
                     SIGN-UP NOW!

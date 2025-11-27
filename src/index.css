@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Sometype+Mono:ital,wght@0,400..700;1,400..700&display=swap');
+
+
 /* RESET */
 * {
   margin: 0;
@@ -5,8 +8,16 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
 img {
   max-width: 100%;
+}
+
+a {
+  text-decoration: none;
 }
 
 ul {
@@ -14,7 +25,7 @@ ul {
 }
 
 .container {
-  width: 80%;
+  width: 90%;
   max-width: 1000px;
   margin: 0 auto;
 }
@@ -26,6 +37,10 @@ ul {
 
 .d-flex {
   display: flex;
+}
+
+.wrap {
+  flex-wrap: wrap;
 }
 
 .justify-content-center {
@@ -54,4 +69,23 @@ ul {
 
 .color-white {
   color: white;
+}
+
+
+.footer-top {
+  padding: 40px 0px;
+  background-image: url(./assets/img/dc-logo-bg.png), url(./assets/img/footer-bg.jpg);
+  background-size: 40%, cover;
+  background-repeat: no-repeat;
+  background-position: center right;
+}
+
+.footer-top .col {
+  width: calc(100% / 6);
+  color: white;
+}
+
+header .active {
+  text-decoration: underline;
+  color: blue;
 }

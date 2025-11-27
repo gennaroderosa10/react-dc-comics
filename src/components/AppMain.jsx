@@ -4,16 +4,44 @@ import Merc from "../assets/img/buy-comics-merchandise.png";
 import Sub from "../assets/img/buy-comics-subscriptions.png";
 import Location from "../assets/img/buy-comics-shop-locator.png";
 import Visa from "../assets/img/buy-dc-power-visa.svg";
+import comics from "../assets/comics";
 
 
 export default function AppMain() {
     return (
         <main>
+            <div className={style.hero}>
+
+            </div>
             <div className="background-black">
                 <div className="container d-flex">
-                    <h2 className="color-white py-50">--CONTENT GOES HERE--</h2>
+
+
+
+
+
+                    <div className="d-flex wrap">
+                        {comics.map((item) => (
+                            <div className={style.col} key={item.id}>
+                                <img src={item.thumb} alt={item.title} />
+                                <p className="color-white">
+                                    {item.title}
+                                </p>
+                            </div>
+                        ))}
+
+                    </div>
                 </div>
             </div>
+
+
+
+
+
+
+
+
+
             <div className="background-blue">
                 <div className="container d-flex justify-content-center">
                     <nav className="d-flex">
