@@ -5,7 +5,7 @@ import Sub from "../assets/img/buy-comics-subscriptions.png";
 import Location from "../assets/img/buy-comics-shop-locator.png";
 import Visa from "../assets/img/buy-dc-power-visa.svg";
 import comics from "../assets/comics";
-
+import Card from "./ProductCard";
 
 export default function AppMain() {
     return (
@@ -21,14 +21,24 @@ export default function AppMain() {
 
 
                     <div className="d-flex wrap">
+
                         {comics.map((item) => (
+                            <Card
+                                id={item.id}
+                                img={item.thumb}
+                                title={item.title}
+                            />
+                        ))}
+
+
+                        {/* {comics.map((item) => (
                             <div className={style.col} key={item.id}>
                                 <img src={item.thumb} alt={item.title} />
                                 <p className="color-white">
                                     {item.title}
                                 </p>
                             </div>
-                        ))}
+                        ))} */}
 
                     </div>
                 </div>
